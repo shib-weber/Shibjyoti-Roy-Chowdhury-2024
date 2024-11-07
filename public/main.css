@@ -1,0 +1,194 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background-color:transparent;
+}
+::-webkit-scrollbar-thumb {
+    background:#00eaff;
+    border-radius: 5px; 
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+    height: 600vh;
+}
+
+body a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    top: 0%;
+    width: 100% !important;
+    height: 100%;
+    z-index: -1;
+}
+/* Body Part */
+
+.name{
+    position: absolute;
+    top: 5%;
+    height: 30px;
+    width: 0px;
+    left: 5%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    background-color: #0000008f;
+    border: 2px solid aqua; 
+    margin: 10px; 
+    transition: ease-out 0.5s;
+}
+.name img {
+    position: absolute;
+    left: -3%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.show{
+    width: 600px;
+}
+
+/* Matrix Cloud*/
+.container {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 15%;
+    right:5% ;
+}
+
+.cloud {
+    position: absolute;
+    left: -6%;
+    width: 100px;
+    height: 50px;
+    background: #ff00ff;
+    border-radius: 50%;
+    box-shadow: 
+        60px 60px 0 60px #ff00ff, 
+        100px 0 0 60px #ff00ff, 
+        180px 30px 0 60px #ff00ff,
+        150px 20px 120px 100px rgba(255, 0, 255, 1), /* Brighter outline */
+        20px 0 80px 80px rgba(255, 0, 255, 0.8); /* Larger outer glow */
+      /*Animation for glowing effect */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 
+            60px 60px 0 60px #ff00ff, 
+            100px 0 0 60px #ff00ff, 
+            180px 30px 0 60px #ff00ff,
+            0 0 15px rgba(255, 0, 255, 0.6),
+            0 0 30px rgba(255, 0, 255, 0.4);
+    }
+    100% {
+        box-shadow: 
+            60px 60px 0 60px #ff00ff, 
+            100px 0 0 60px #ff00ff, 
+            180px 30px 0 60px #ff00ff,
+            0 0 25px rgba(255, 0, 255, 1), /* Brighter glow */
+            0 0 50px rgba(255, 0, 255, 0.8); /* Larger outer glow */
+    }
+}
+
+
+/* Raindrops */
+.rain {
+    position: absolute;
+    top: 150px; /* Right below the cloud */
+    width: 100%;
+    height: 300px;
+}
+
+.drop {
+    position: absolute;
+    color: #f801f8;
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff;
+    font-size: 1.2em;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+.settled {
+    position: absolute;
+    bottom: 0;
+    animation: none; /* Stop animation */
+    opacity: 1; /* Full opacity */
+    color: #f801f8;
+    font-size: 1.2em;
+    z-index: 1; /* Ensure settled drops stay above others */
+}
+
+/* Animation */
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(300px); 
+        opacity: 0;
+    }
+}
+
+
+.contactme{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    margin-top: 3rem;
+    left: -25rem;
+    width: 300px;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.social{
+    display: flex;
+    gap: 2rem;
+}
+#inst{
+    width: 30px;
+    height: 30px;
+    color: white;
+    object-fit: contain;
+}
+.svg-icon {
+    fill: white;
+    transition: fill 0.3s ease;
+}
+
+.svg-icon:hover {
+    fill: greenyellow;
+}
+.terminal::-webkit-scrollbar{
+    width: 5px;
+}
+.terminal::-webkit-scrollbar-thumb{
+    background-color: #00ff00;
+    border-radius: 2px;
+}
