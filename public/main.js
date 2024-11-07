@@ -10,7 +10,7 @@ const pc = particlesCursor({
     colors: [0x00ffff, 0x00fffc],
     coordScale: 0.5,
     pointSize: 1,
-    noiseIntensity: 0.005,
+    noiseIntensity: 0.001,
     noiseTimeCoef: 0.001,
     pointDecay: 0.0025,
     sleepRadiusX: 300,
