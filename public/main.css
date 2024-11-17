@@ -82,14 +82,14 @@ canvas {
     left: -6%;
     width: 100px;
     height: 50px;
-    background: #ff00ff;
+    background: #00f7ff;
     border-radius: 50%;
     box-shadow: 
-        60px 60px 0 60px #ff00ff, 
-        100px 0 0 60px #ff00ff, 
-        180px 30px 0 60px #ff00ff,
-        150px 20px 120px 100px rgba(255, 0, 255, 1), /* Brighter outline */
-        20px 0 80px 80px rgba(255, 0, 255, 0.8); /* Larger outer glow */
+        60px 60px 0 60px #00f7ff, 
+        100px 0 0 60px #00f7ff, 
+        180px 30px 0 60px #00f7ff,
+        150px 20px 120px 100px #56f9ff, /* Brighter outline */
+        20px 0 80px 80px #26e4eb; /* Larger outer glow */
       /*Animation for glowing effect */
 }
 .mname{
@@ -97,26 +97,26 @@ canvas {
     position: absolute;
     width: 80%;
     height: 50%;
-    background-color: #ff00ff;
-    box-shadow: #f801f8;
+    background-color: #00f7ff;
+    box-shadow: #72efff;
 }
 
 @keyframes glow {
     0% {
         box-shadow: 
-            60px 60px 0 60px #ff00ff, 
-            100px 0 0 60px #ff00ff, 
-            180px 30px 0 60px #ff00ff,
-            0 0 15px rgba(255, 0, 255, 0.6),
-            0 0 30px rgba(255, 0, 255, 0.4);
+            60px 60px 0 60px #00f7ff, 
+            100px 0 0 60px #00f7ff, 
+            180px 30px 0 60px #00f7ff,
+            0 0 15px rgba(0, 255, 242, 0.6),
+            0 0 30px rgba(0, 217, 255, 0.4);
     }
     100% {
         box-shadow: 
-            60px 60px 0 60px #ff00ff, 
-            100px 0 0 60px #ff00ff, 
-            180px 30px 0 60px #ff00ff,
-            0 0 25px rgba(255, 0, 255, 1), /* Brighter glow */
-            0 0 50px rgba(255, 0, 255, 0.8); /* Larger outer glow */
+            60px 60px 0 60px #00f7ff, 
+            100px 0 0 60px #00f7ff, 
+            180px 30px 0 60px #00f7ff,
+            0 0 25px rgb(0, 225, 255), /* Brighter glow */
+            0 0 50px rgba(0, 255, 255, 0.8); /* Larger outer glow */
     }
 }
 .mname h2 {
@@ -136,8 +136,8 @@ canvas {
 
 .drop {
     position: absolute;
-    color: #f801f8;
-    text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff;
+    color: #01d3f8;
+    text-shadow: 0 0 5px #fff, 0 0 10px #00f7ff;
     font-size: 1.2em;
     animation: fall linear infinite;
     opacity: 0.8;
@@ -148,7 +148,7 @@ canvas {
     bottom: 0;
     animation: none; /* Stop animation */
     opacity: 1; /* Full opacity */
-    color: #f801f8;
+    color: #01f8d7;
     font-size: 1.2em;
     z-index: 1; /* Ensure settled drops stay above others */
 }
@@ -164,16 +164,54 @@ canvas {
         opacity: 0;
     }
 }
+/* profile */
+.profile{
+    position: absolute;
+    width: 48%;
+    height: 300px;
+    border-radius: 1rem;
+    left: 5rem;
+    top: 200px;
+    background-color: #0000008f;
+    border: 2px solid aqua; 
+    padding: 0 0 0 3%;
+}
+.for_profile{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    white-space: pre-wrap;
+}
 
+/*Education*/
+.education{
+    position: absolute;
+    width: 670px;
+    height: 300px;
+    border-radius: 1rem;
+    right: 5%;
+    top: 600px;
+    background-color: #0000008f;
+    border: 2px solid aqua; 
+    padding: 0 0 0 3%;
+}
+.for_edu{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    white-space: pre-wrap;
+}
+
+/*Terminal*/
 .terminal {
     position: relative;
     top: 2rem;
     background-color: #000;
-    border: 2px solid #00ff00;
+    border: 2px solid #00f7ff;
     padding: 10px;
     width: 80%;
     max-width: 600px;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 10px #03e1e9;
 }
 
 .output {
@@ -192,7 +230,7 @@ canvas {
 }
 
 .prompt {
-    color: #00ff00;
+    color: #00f7ff;
 }
 
 input {
@@ -202,7 +240,7 @@ input {
     outline: none;
     font-family: 'Courier New', Courier, monospace;
     flex-grow: 1;
-    caret-color: #00ff00;
+    caret-color: #00f7ff;
     
 }
 
@@ -242,6 +280,6 @@ input {
     width: 5px;
 }
 .terminal::-webkit-scrollbar-thumb{
-    background-color: #00ff00;
+    background-color: #00f7ff;
     border-radius: 2px;
 }

@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.name').classList.add('show');
 });
@@ -49,7 +50,7 @@ setInterval(createRaindrop, 150);
 document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', function() {
         window.scrollTo(0, 0) ;
-      });
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -165,36 +166,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const stpsh=document.querySelector('#stpsh')
-const stp=document.querySelector('.stp')
-stpsh.addEventListener('click',()=>{
-    stp.classList.toggle('visibilitys')
-})
-
-const stpch=document.querySelector('#stpch')
-const chat=document.querySelector('.Chat')
-stpch.addEventListener('click',()=>{
-    chat.classList.toggle('visibilityc')
-})
-
-const stpgh=document.querySelector('#stpgh')
-const gov=document.querySelector('.gov')
-stpgh.addEventListener('click',()=>{
-    gov.classList.toggle('visibilityg')
-})
-
-const stpbt=document.querySelector('#stpbt')
-const chatbt=document.querySelector('#chatbt')
-const govbt=document.querySelector('#govbt')
-
-stpbt.addEventListener('click',()=>{
-    location.href='https://shib-weber.github.io/Stone-Paper-Scissor-Game/'
-})
-
-chatbt.addEventListener('click',()=>{
-    location.href='https://chatwat.onrender.com'
-})
-
-govbt.addEventListener('click',()=>{
-    location.href='https://shib-weber.github.io/PublicWelfare/'
-})

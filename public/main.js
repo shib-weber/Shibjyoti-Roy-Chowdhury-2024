@@ -18,3 +18,32 @@ const pc = particlesCursor({
     sleepTimeCoefX: 0.005,
     sleepTimeCoefY: 0.002
 });
+
+function circle(){
+    document.querySelector('.atomic').slider({
+        range:false,
+        min:20,
+        max:500,
+        value:280,
+        slide:function(event , ui){
+            console.log(ui.value);
+            sphereRad=ui.value;
+        }
+    })
+}
+function circle2(){
+    document.querySelector("#slider-test").slider({
+        range:false,
+        min:1.0,
+        max:2.0,
+        value:1,
+        step:0.01,
+        slide:function(event , ui){
+            console.log(ui.value);
+            radius_sp=ui.value
+        }
+    })
+}
+
+circle()
+circle2()
